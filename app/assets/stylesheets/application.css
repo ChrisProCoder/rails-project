@@ -19,4 +19,9 @@
   font-family: 'Roboto', sans-serif;
   }
   
-  
+  /*Nav Styles*/
+.navbar {
+   /*border-bottom: 1px solid #fff;*/
+  margin-bottom: 20px;
+  background-color:#333;
+}
