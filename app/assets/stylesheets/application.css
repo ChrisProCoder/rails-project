@@ -23,12 +23,25 @@
   background-color:#555;
 }
 
+
+.navbar-brand:hover, .nav-link:hover {
+  opacity: 0.75;
+}
+
 .nav-link {
   color: #fff
 }
 
-.navbar-brand:hover, .nav-link:hover {
-  opacity: 0.75;
+.navbar-toggler {
+  border-color: #fff;
+}
+
+.navbar-toggler:hover {
+  box-shadow: 0px 0px 8px 3px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0px 0px 8px 3px;
 }
 
  /*Typography Styles*/
