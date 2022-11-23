@@ -23,21 +23,21 @@
   background-color:#555;
 }
 
-.navbar-nav {
- font-size: 17px 
+.nav-link {
+  color: #fff
 }
 
-.navbar-brand:hover, .navbar-nav:hover {
+.navbar-brand:hover, .nav-link:hover {
   opacity: 0.75;
 }
 
-
-  
-h1, h2 h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Roboto', sans-serif;
+ /*Typography Styles*/
+h1, h2, h3 {
+ font-family: 'Source Sans Pro', sans-serif;
 }
-  
+
+
+/*Home Page Styles  */
 .home-callout {
    margin-top: -20px;
    padding-top: 50px;
