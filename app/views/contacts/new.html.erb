@@ -1,12 +1,22 @@
 <div class= container>
-  <h2>Contact Us</h2>
-  <%= form_for "/contacts" do |f| %>
-   <%= f.label :name %>
-   <%= f.text_field :name %>
-   <%= f.label :email %>
-   <%= f.text_field :email %>
-   <%= f.label :comments %>
-   <%= f.text_area :comments %>
-   <%= f.submit 'submit'%>
-  <% end %>
+  <h2 class="text-center">Contact Us</h2>
+  <div class= "col-md-6 offset-md-3">
+    <div class="card card-body bg-light">
+      <%= form_for "/contacts" do |f| %>
+        <div class="mb-3">
+         <%= f.label :name %>
+         <%= f.text_field :name, class: 'form-control' %>
+        </div>
+        <div class="mb-3">
+         <%= f.label :email %>
+         <%= f.text_field :email, class: 'form-control' %>
+       </div>
+       <div class="mb-3">
+         <%= f.label :comments %>
+         <%= f.text_area :comments, class: 'form-control' %>
+       </div>
+       <%= f.submit 'Submit', class: 'btn btn-success'%>
+      <% end %>
+    </div>
+  </div>
 </div>
