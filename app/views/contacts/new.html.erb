@@ -1,8 +1,10 @@
 <div class= container>
   <h2 class="text-center">Contact Us</h2>
+  
   <div class= "col-md-6 offset-md-3">
+    <%= flash[:notice] %>
     <div class="card card-body bg-light">
-      <%= form_for "/contacts" do |f| %>
+      <%= form_for @contact do |f| %>
         <div class="mb-3">
          <%= f.label :name %>
          <%= f.text_field :name, class: 'form-control' %>
