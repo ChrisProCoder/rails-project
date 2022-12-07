@@ -5,8 +5,12 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.save
-       flash[:success] = "Message sent."
-       redirect_to new_contact_path, alert: 
+      name = params[:contact][:name]
+      email = params[:contact][:email]
+      body = params[:contact][:body]
+      ContactMailer.contact_email(name, email, body).deliver
+      flash[:success] = "Message sent."
+      redirect_to new_contact_path, alert: 
     else
        flash[:danger] = @contact.errors.full_messages.join(", ")
        redirect_to new_contact_path
