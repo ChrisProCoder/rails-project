@@ -32,11 +32,19 @@
             
             <!--<a class="nav-link active"  aria-current="page" href="/about">About</a>-->
             <%= link_to "About", about_path, class: "nav-link" %>
-            <%= link_to "Contact Us", new_contact_path, class: "nav-link" %>
+            <%= link_to "Contact Us", contact_us_path, class: "nav-link" %>
           </div>
         </div>  
       </div>
     </nav>
+    
+    <div class="container">
+      <div class="col-md-8 offset-md-2">
+        <% flash.each do |type, msg| %>
+          <%= content_tag :h5, msg, class: "text-center alert alert-#{type}" %>
+        <% end %>
+      </div>
+   </div>
    
       <%= yield %>
   

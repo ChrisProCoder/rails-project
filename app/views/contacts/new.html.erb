@@ -2,9 +2,7 @@
   <h2 class="text-center">Contact Us</h2>
   
   <div class= "col-md-6 offset-md-3">
-    <% flash.each do |type, msg| %>
-      <%= content_tag :h5, msg, class: "text-center alert alert-#{type}" %>
-    <% end %>
+    
     <div class="card card-body bg-light">
       <%= form_for @contact do |f| %>
         <div class="mb-3">
